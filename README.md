@@ -13,18 +13,20 @@ Your shelfmarks have to follow the pattern A601, B11109 (letters followed by num
 
 After the conversion from LaTeX to XML with our script, the following elements have to be checked and fixed:
 
-1. Search for one of the brackets [*] used for unclear and replace with the <unclear></unclear> tag
+1. Search for one of the brackets [*] used for unclear and replace with the unclear tags <unclear></unclear>
 
-2. Search for one of the brackets ⟨*⟩ used for supplied text and replace it with the <supplied></supplied> tag = MATHEMATICAL RIGHT AND LEFTANGLE BRACKET U+27E8 and U+27E9 
+2. Search for one of the brackets ⟨*⟩ used for supplied text and replace it with the supplied tags <supplied></supplied>
+   MATHEMATICAL RIGHT AND LEFTANGLE BRACKET U+27E8 and U+27E9 
 
-3. Search for one of the insertion marks  ⸌*⸍ used for scribal insertions  and replace it with the <add></add> tag = LEFT & RIGHT RAISED OMISSION BRACKET U+2E0C and U+2E0D
+4. Search for one of the insertion marks  ⸌*⸍ used for scribal insertions  and replace it with the addition tags <add></add>
+   LEFT & RIGHT RAISED OMISSION BRACKET U+2E0C and U+2E0D
 
-4. Search for  * Deletion marks (not in Unicode but Oxygen finds them) and replace them with del-tags <del></del>
+6. Search for  * Deletion marks (not in Unicode, but Oxygen finds them) and replace them with deletion tags <del></del>
 
-5. Search for '{' or '}' to make sure no TeX markup is left in your file. /app
+7. Search for '{' or '}' to make sure no TeX markup is left in your file. 
 
-6. Paste the output into the body of your TEI XML file and add divs and metadata according to your needs.
+8. Paste the output into the body of your TEI XML file and add divs and metadata according to your needs.
 
-7. Make sure that <ex> is not incorrectly used within the notes (with XPath), if it is replace it with <q>
+9. Make sure that expansion tags <ex> are not incorrectly used within the notes (with XPath), if it is replace it with quotation tag <q>
 
-8. Format and indent and then Search for superfluous blank spaces, common examples include: ‘</app> .’, ‘</app> ,’ , ‘ </lem>’, ‘ </rdg>’
+10. Format and indent and then Search for superfluous blank spaces, common examples include: ‘/app> .’, ‘/app> ,’ , ‘ </lem’, ‘ </rdg’
