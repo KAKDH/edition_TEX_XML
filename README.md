@@ -6,7 +6,8 @@ This folder contains data and scrips associated with the publication of the text
 
 To convert TEX files of a text-critical edition with apparatus into TEI XML with replacement_TEX_XML.py (and apparatus_function_def.py) your TEX file has to be encoded following the reledmac guidelines, with \edtext and \Afootnote, etc. 
 
-Your shelfmarks have to follow the pattern A601, B11109 (letters followed by numbers, no spaces, no special characters) etc. 
+Your shelfmarks have to follow the pattern A601, B11109 (letters followed by numbers, no spaces, no special characters) etc., see: app_B11109_edition.tex 
+
 
 *AFTER THE CONVERSION*
 
