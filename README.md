@@ -1,6 +1,6 @@
 # edition_TEX_XML
 
-This folder contains data and scrips associated with the publication of the text critical edition of Hrómundar sögur and conversion from TEX to XML.
+This folder contains data and scrips associated with the publication of the text critical edition of Hrómundar sögur and conversion from TEX to XML. The scripts were created by Katarzyna Anna Kapitan and Böðvar Ólafsson in 2023. 
 
 *BEFORE THE CONVERSION*
 
